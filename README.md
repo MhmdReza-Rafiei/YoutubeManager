@@ -24,12 +24,12 @@
 
 🛠️   What would you like to do? > 
 
+## How to install & run
 ```bash
 git clone https://github.com/MhmdReza-Rafiei/Youtube-Manager
 cd YoutubeManager
 pip install -r requirements.txt
 python start.py          # Launch
 ```
-
 ## Created By **MhmdReza Rafiei**
 ## GitHub: **@MhmdReza-Rafiei**
