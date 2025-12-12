@@ -13,16 +13,16 @@
 
 ## This Is What You See
 ------------------------------------
-
 =============== System - Panel ===============
 
 =============== Menu ===============
 1. Download        → Download (Videos/PlayList/...)
 2. Status          → Status (Get Status of an (Video/PlayList/...))
-3. Help            → Show help
-4. Exit            → Exit / Go back
+3. Setting         → Setting (Change UserName/Defult_Urls)
+4. Help            → Show help
+5. Exit            → Exit / Go back
 
-🛠️   What would you like to do? > 
+🛠️   What would you like to do? >
 
 ## How to install & run
 ```bash
