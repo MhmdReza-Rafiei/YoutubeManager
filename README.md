@@ -6,9 +6,9 @@
 | Feature                        | Description                                                                 | Result                              |
 |-------------------------------|-----------------------------------------------------------------------------|-------------------------------------|
 | Downloads Videos\PlayLists\...          | Scans any folder → moves files to correct category (Videos, Music, Docs…) | Everything ends up where it belongs |
-| Organize Files      | Removes (1) (2) [HD] (!) NEW 2024 ★ REPACK → leaves only the real name     | Clean, readable filenames forever   |
-| Configurable            | You decide where each file type goes (YAML config)                          | Your rules. Your system.            |
-| One-Click Download             | Set default paths → clean forever with one command                         | Set it once, win forever            |
+| Organize Files      | Base on the channel (playlist/...) Organize's downloaded files     | Clean forever |
+| Configurable            | Add your favorite urls once, and you’ll never have to type or paste them again                          | Your rules. Your system.            |
+| One-Click Download             | Paste or Use Config Urls with one click to Download your favorite videos/audios                         | Set it once, win forever            |
 | Beautiful Console UI          | Feels like a premium app (not a script)                                     | You’ll actually enjoy using it      |
 
 ## This Is What You See
