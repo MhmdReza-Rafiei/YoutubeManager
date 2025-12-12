@@ -12,9 +12,6 @@
 | Beautiful Console UI          | Feels like a premium app (not a script)                                     | You’ll actually enjoy using it      |
 
 ## This Is What You See
-
-
-Youtube Manager
 ------------------------------------
 
 =============== System - Panel ===============
