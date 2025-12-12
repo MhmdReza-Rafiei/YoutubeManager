@@ -152,8 +152,8 @@ class Panel:
 # ====================== Actions ======================
 def welcome():
     header(f"{getUser() + " " if getUser() else ""}Welcome to (Youtube Manager) 📰")
-    print("🔔   GitHub: https://github.com/MhmdReza-Rafiei/Youtube-Manager")
-    print("🎗️    MadeBy: @MhmdReza Rafiei")
+    print("🔔   GitHub: https://github.com/MhmdReza-Rafiei/YoutubeManager")
+    print("🎗️   MadeBy: @MhmdReza Rafiei")
 
 def download(urls_dict: Optional[Dict[str, dict]] = None):
     if urls_dict is not None:
@@ -352,7 +352,7 @@ def main():
           changeConfig("User_Name",UserName)
           saveConfig()
           _input("\nPress Enter to continue...")
-          return
+
         header("System - Panel")
         SystemPanel = Panel({
             "download":{"desc":"Download (Videos/PlayList/...)","action":download},
