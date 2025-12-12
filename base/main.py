@@ -94,10 +94,18 @@ def Download(url: str, type: str = "video", format: str = "mp4", quality: str = 
 
 def getInfo(url: str) -> Dict:
     ydl_opts = {
-        'quiet': True, 
+        'quiet': True,
         'no_warnings': True,
         'skip_download': True,
-        'ignoreerrors': True, 
+        'extract_flat': 'in_playlist',
+        'extractor_args': {
+            'youtube': {
+                'skip': ['authcheck'],
+                'player_skip': ['js', 'configs', 'webpage'], 
+                'max_comments': 0, 
+            }
+        },
+        'ignoreerrors': True,
     }
 
     try:
