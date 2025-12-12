@@ -227,7 +227,7 @@ def status(urls_dict: Optional[Dict[str, dict]] = None):
     if urls_dict is not None:
         if not urls_dict:
             print("\n📭 No URLs to check!")
-            input("\nPress Enter to continue...")
+            _input("\nPress Enter to continue...")
             return
 
         header("🔍 Status Checker")
