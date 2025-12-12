@@ -5,7 +5,7 @@
 
 | Feature                        | Description                                                                 | Result                              |
 |-------------------------------|-----------------------------------------------------------------------------|-------------------------------------|
-| Downloads Videos\PlayLists\...          | Scans any folder → moves files to correct category (Videos, Music, Docs…) | Everything ends up where it belongs |
+| Downloads Videos\PlayLists\...          | Download vidoes/audios using (video / playlist / channel / ...) urls | Easy Download Audios\Videos and Enjoy |
 | Organize Files      | Base on the channel (playlist/...) Organize's downloaded files     | Clean forever |
 | Configurable            | Add your favorite urls once, and you’ll never have to type or paste them again                          | Your rules. Your system.            |
 | One-Click Download             | Paste or Use Config Urls with one click to Download your favorite videos/audios                         | Set it once, win forever            |
