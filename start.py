@@ -101,6 +101,8 @@ class Panel:
         print("Help              → Show this help")
         print("Exit              → Go back / close panel")
         print()
+        _input("\nPress Enter to continue...")
+        return
 
     def draw(self):
         header("Menu")
