@@ -229,6 +229,7 @@ def status(urls_dict: Optional[Dict[str, dict]] = None):
             print("\n📭 No URLs to check!")
             _input("\nPress Enter to continue...")
             return
+            
 
         header("🔍 Status Checker")
         total_urls = len(urls_dict)
@@ -393,22 +394,6 @@ def status(urls_dict: Optional[Dict[str, dict]] = None):
         _input("\nPress Enter to continue...")
 
 
-
-    # Menu mode
-    if urls_dict is None:
-        header("Status Check")
-        Panel({
-            "default urls": {
-                "desc": "Check status of Default_Urls from config",
-                "action": lambda: status(CONFIG.get("Default_Urls", {}))
-            },
-            "custom url": {
-                "desc": "Enter custom URLs to check status",
-                "action": lambda: status(
-                    {url.strip(): {} for url in input("Enter URLs (separate with comma): ").split(",") if url.strip()}
-                )
-            }
-        }, help=True, exit=True).run()
 
     # Menu mode
     if urls_dict is None:
