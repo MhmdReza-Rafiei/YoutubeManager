@@ -175,17 +175,17 @@ def download(urls_dict: Optional[Dict[str, dict]] = None):
                 print(f"Settings for: {url}")
                 Type = input("  Type (video/audio) [video]: ").strip().lower() or "video"
                 Type = "audio" if Type == "audio" else "video"
-                Format = input("  Format (mp4/mp3/etc) [mp4]: ").strip() or "mp4"
-                Quality = input("  Quality (highest/high/mid/low) [highest]: ").strip() or "highest"
-                Thumbnail = input("  Embed thumbnail? (y/n) [y]: ").strip().lower() != "n"
-                Organize = input("  Organize by channel? (y/n) [y]: ").strip().lower() != "n"
+                Format = input("  Format (mp4/mp3/etc) [mp4]: ").strip().lower() or "mp4"
+                Quality = input("  Quality (highest/high/mid/low) [highest]: ").strip().lower() or "highest"
+                Thumbnail = input("  Embed thumbnail? (y/n) [y]: ").strip().lower() or "y"
+                Organize = input("  Organize by channel? (y/n) [y]: ").strip().lower() or "y"
 
                 final_urls[url] = {
                     'type': Type,
                     'format': Format,
                     'quality': Quality,
-                    'thumbnail': Thumbnail,
-                    'organize': Organize
+                    'thumbnail': Thumbnail == "y",
+                    'organize': Organize == "y"
                 }
         else:
             final_urls = urls_dict
@@ -199,11 +199,12 @@ def download(urls_dict: Optional[Dict[str, dict]] = None):
                     type=opts.get("type", "video"),
                     format=opts.get("format", "mp4"),
                     quality=opts.get("quality", "highest"),
-                    thumbnail=opts.get("thumbnail", True),
+                    thumbnail=opts.get("thumbnail", False),
                     organize=opts.get("organize", True)
                 )
             except Exception as e:
                 print(f"Failed: {e}")
+                return
         if done:
             header("All Downloads Complete")
         _input("\nPress Enter to continue...")
